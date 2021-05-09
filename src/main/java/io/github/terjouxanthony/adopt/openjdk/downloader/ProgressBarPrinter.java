@@ -1,4 +1,4 @@
-package com.atrjx.adopt.openjdk.downloader;
+package io.github.terjouxanthony.adopt.openjdk.downloader;
 
 public class ProgressBarPrinter {
     private long previousPercentage = -1;

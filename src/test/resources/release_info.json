@@ -1,0 +1,49 @@
+{
+  "binaries": [
+    {
+      "architecture": "x64",
+      "download_count": 9279,
+      "heap_size": "normal",
+      "image_type": "jre",
+      "installer": {
+        "checksum": "8871544e7e2a5a4ad7ec1d8b976a1fb19b312ab77fcd4681014669341691cc44",
+        "checksum_link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16%2B36/OpenJDK16-jre_x64_windows_hotspot_16_36.msi.sha256.txt",
+        "download_count": 7811,
+        "link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16%2B36/OpenJDK16-jre_x64_windows_hotspot_16_36.msi",
+        "metadata_link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16%2B36/OpenJDK16-jre_x64_windows_hotspot_16_36.msi.json",
+        "name": "OpenJDK16-jre_x64_windows_hotspot_16_36.msi",
+        "size": 33411072
+      },
+      "jvm_impl": "hotspot",
+      "os": "windows",
+      "package": {
+        "checksum": "0769aa0d23de037372b79cb6c208afabc098fede4e41d0a1b45aca81f789f1c5",
+        "checksum_link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16%2B36/OpenJDK16-jre_x64_windows_hotspot_16_36.zip.sha256.txt",
+        "download_count": 1468,
+        "link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16%2B36/OpenJDK16-jre_x64_windows_hotspot_16_36.zip",
+        "metadata_link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16%2B36/OpenJDK16-jre_x64_windows_hotspot_16_36.zip.json",
+        "name": "OpenJDK16-jre_x64_windows_hotspot_16_36.zip",
+        "size": 45879117
+      },
+      "project": "jdk",
+      "scm_ref": "jdk-16+36_adopt",
+      "updated_at": "2021-03-16T17:24:57Z"
+    }
+  ],
+  "download_count": 126346,
+  "id": "MDc6UmVsZWFzZTM5ODk0MjU0.jf5EtRNs/4Bcfw==",
+  "release_link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/tag/jdk-16%2B36",
+  "release_name": "jdk-16+36",
+  "release_type": "ga",
+  "timestamp": "2021-03-16T17:21:16Z",
+  "updated_at": "2021-03-16T17:21:16Z",
+  "vendor": "adoptopenjdk",
+  "version_data": {
+    "build": 36,
+    "major": 16,
+    "minor": 0,
+    "openjdk_version": "16+36",
+    "security": 0,
+    "semver": "16.0.0+36"
+  }
+}

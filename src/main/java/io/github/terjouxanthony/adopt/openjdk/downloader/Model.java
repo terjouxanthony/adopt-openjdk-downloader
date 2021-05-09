@@ -1,10 +1,14 @@
-package com.atrjx.adopt.openjdk.downloader;
+package io.github.terjouxanthony.adopt.openjdk.downloader;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
+import lombok.NonNull;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 
@@ -102,5 +106,32 @@ public class Model {
     }
 
     @interface Nullable {
+    }
+
+    @Data
+    public static class JavaInstallDescription {
+        private final Path installPath;
+        private final Path jdkHomePath;
+    }
+
+    @Data
+    @Builder
+    public static class InstallJavaParams {
+        @NonNull
+        private final String arch;
+        @NonNull
+        private final String os;
+        private Integer javaVersion;
+        private final String fullJavaReleaseName;
+        @Builder.Default
+        private boolean downloadLatest = true;
+        @Builder.Default
+        private boolean cleanExistingSameMajorVersion = true;
+        @NonNull
+        @Builder.Default
+        private ImageType imageType = ImageType.JRE;
+        @NonNull
+        @Builder.Default
+        private Path javaDownloaderDir = Paths.get(System.getProperty("user.home")).resolve(".m2").resolve("java");
     }
 }

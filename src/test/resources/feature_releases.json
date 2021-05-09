@@ -1,0 +1,51 @@
+[
+  {
+    "binaries": [
+      {
+        "architecture": "x64",
+        "download_count": 4627,
+        "heap_size": "normal",
+        "image_type": "jre",
+        "installer": {
+          "checksum": "781effe3282321702e7a6e63a5aa7614060da26572f136525fff4ade2c1e9a21",
+          "checksum_link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16.0.1%2B9/OpenJDK16U-jre_x64_windows_hotspot_16.0.1_9.msi.sha256.txt",
+          "download_count": 4089,
+          "link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16.0.1%2B9/OpenJDK16U-jre_x64_windows_hotspot_16.0.1_9.msi",
+          "metadata_link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16.0.1%2B9/OpenJDK16U-jre_x64_windows_hotspot_16.0.1_9.msi.json",
+          "name": "OpenJDK16U-jre_x64_windows_hotspot_16.0.1_9.msi",
+          "size": 33402880
+        },
+        "jvm_impl": "hotspot",
+        "os": "windows",
+        "package": {
+          "checksum": "169b7975e01bd6573062d29a5f2a1c7c4b659ada9de69c4a63328f2936d0f3f9",
+          "checksum_link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16.0.1%2B9/OpenJDK16U-jre_x64_windows_hotspot_16.0.1_9.zip.sha256.txt",
+          "download_count": 538,
+          "link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16.0.1%2B9/OpenJDK16U-jre_x64_windows_hotspot_16.0.1_9.zip",
+          "metadata_link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16.0.1%2B9/OpenJDK16U-jre_x64_windows_hotspot_16.0.1_9.zip.json",
+          "name": "OpenJDK16U-jre_x64_windows_hotspot_16.0.1_9.zip",
+          "size": 45889781
+        },
+        "project": "jdk",
+        "scm_ref": "jdk-16.0.1+9_adopt",
+        "updated_at": "2021-04-23T09:14:25Z"
+      }
+    ],
+    "download_count": 58296,
+    "id": "MDc6UmVsZWFzZTQxODkwOTU2.mlaKtdz93aiN7Q==",
+    "release_link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/tag/jdk-16.0.1%2B9",
+    "release_name": "jdk-16.0.1+9",
+    "release_type": "ga",
+    "timestamp": "2021-04-23T09:10:06Z",
+    "updated_at": "2021-04-23T09:10:06Z",
+    "vendor": "adoptopenjdk",
+    "version_data": {
+      "build": 9,
+      "major": 16,
+      "minor": 0,
+      "openjdk_version": "16.0.1+9",
+      "security": 1,
+      "semver": "16.0.1+9"
+    }
+  }
+]
