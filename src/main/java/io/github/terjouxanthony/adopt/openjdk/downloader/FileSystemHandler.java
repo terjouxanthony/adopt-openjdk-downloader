@@ -2,7 +2,6 @@ package io.github.terjouxanthony.adopt.openjdk.downloader;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -11,7 +10,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
-import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -83,14 +81,6 @@ public class FileSystemHandler {
             });
         } catch (IOException e) {
             log.error(e.getMessage(), e);
-        }
-    }
-
-    public static void deleteDirWithException(Path path) throws IOException {
-        try (final Stream<Path> files = Files.walk(path)) {
-            files.sorted(Comparator.reverseOrder())
-                    .map(Path::toFile)
-                    .forEach(File::delete);
         }
     }
 }

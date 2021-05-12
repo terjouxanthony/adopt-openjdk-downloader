@@ -1,16 +1,19 @@
-# AdoptOpenJDK downloader
+package io.github.terjouxanthony.adopt.openjdk.downloader.examples;
 
-Java library to ease downloading and installation of AdoptOpenJdk java JDK's and JRE's.
+import io.github.terjouxanthony.adopt.openjdk.downloader.HttpRequester.HttpStatusException;
+import io.github.terjouxanthony.adopt.openjdk.downloader.JavaDownloader;
+import io.github.terjouxanthony.adopt.openjdk.downloader.Model;
+import io.github.terjouxanthony.adopt.openjdk.downloader.Model.InstallJavaParams;
+import io.github.terjouxanthony.adopt.openjdk.downloader.Model.JavaInstallDescription;
+import lombok.extern.slf4j.Slf4j;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.nio.file.Paths;
 
+@Slf4j
+public class Main {
 
-It can be useful in a gradle build or a maven plugin, in order to automate the packaging of a java application for multiple platforms.
-
-
-
-##### Usage:
-
-```java
     public static void main(String[] args) throws HttpStatusException, IOException, URISyntaxException, InterruptedException {
 
         final JavaDownloader javaDownloader = new JavaDownloader();
@@ -32,25 +35,5 @@ It can be useful in a gradle build or a maven plugin, in order to automate the p
         System.out.println(installation.getInstallPath()); // Folder containing the downloaded JDK/JRE
         System.out.println(installation.getJdkHomePath()); // JAVA_HOME path for this JDK/JRE
     }
-```
 
-
-
-##### Build:
-
-```
-mvn clean compile test
-```
-
-##### Run example:
-
-```
-mvn -q clean compile exec:java
-```
-
-
-
-##### Related links:
-
-https://adoptopenjdk.net/
-
+}
