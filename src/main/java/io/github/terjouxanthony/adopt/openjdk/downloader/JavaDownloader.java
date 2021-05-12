@@ -5,6 +5,7 @@ import io.github.terjouxanthony.adopt.openjdk.downloader.Model.ImageType;
 import io.github.terjouxanthony.adopt.openjdk.downloader.Model.InstallJavaParams;
 import io.github.terjouxanthony.adopt.openjdk.downloader.Model.JavaInstallDescription;
 import io.github.terjouxanthony.adopt.openjdk.downloader.Model.ReleaseInfo;
+import io.github.terjouxanthony.adopt.openjdk.downloader.Model.ReleaseNamesRequest;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.Headers;
@@ -47,6 +48,13 @@ public class JavaDownloader {
         this.fileSystemHandler = new FileSystemHandler();
         this.httpRequester = new HttpRequester();
         this.adoptOpenJdkApi = new AdoptOpenJdkApi(this.httpRequester);
+    }
+
+    public List<String> listAllReleases() throws HttpStatusException, IOException {
+        return adoptOpenJdkApi.listAllReleases(ReleaseNamesRequest.builder()
+                .releaseType(Model.ReleaseType.GENERAL_AVAILABILITY)
+                .vendor(Model.Vendor.ADOPT_OPENJDK)
+                .build());
     }
 
     public JavaInstallDescription installJava(InstallJavaParams params) throws IOException, InterruptedException, URISyntaxException, HttpStatusException {

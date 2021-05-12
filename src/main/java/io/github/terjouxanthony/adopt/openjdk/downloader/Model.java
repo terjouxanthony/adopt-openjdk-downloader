@@ -88,8 +88,11 @@ public class Model {
     }
 
     @Data
+    @Builder
     public static class ReleaseNamesRequest {
+        @NonNull
         private final ReleaseType releaseType;
+        @NonNull
         private final Vendor vendor;
         @Nullable
         private final String version; /* Java version range (maven style) of versions to include. e.g: 11.0.4.1+11.1 or [1.0,2.0) or (,1.0] */

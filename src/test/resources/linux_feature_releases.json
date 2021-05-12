@@ -1,0 +1,42 @@
+[
+  {
+    "binaries": [
+      {
+        "architecture": "x64",
+        "download_count": 623,
+        "heap_size": "normal",
+        "image_type": "jre",
+        "jvm_impl": "hotspot",
+        "os": "linux",
+        "package": {
+          "checksum": "5eca19d406c6d130e9c3a4b932b9cb0a6e9cd45932450668c3e911bded4bcf40",
+          "checksum_link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16.0.1%2B9/OpenJDK16U-jre_x64_linux_hotspot_16.0.1_9.tar.gz.sha256.txt",
+          "download_count": 623,
+          "link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16.0.1%2B9/OpenJDK16U-jre_x64_linux_hotspot_16.0.1_9.tar.gz",
+          "metadata_link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16.0.1%2B9/OpenJDK16U-jre_x64_linux_hotspot_16.0.1_9.tar.gz.json",
+          "name": "OpenJDK16U-jre_x64_linux_hotspot_16.0.1_9.tar.gz",
+          "size": 48818276
+        },
+        "project": "jdk",
+        "scm_ref": "jdk-16.0.1+9_adopt",
+        "updated_at": "2021-04-23T09:14:10Z"
+      }
+    ],
+    "download_count": 69625,
+    "id": "MDc6UmVsZWFzZTQxODkwOTU2.mlaKtdz93aiN7Q==",
+    "release_link": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/tag/jdk-16.0.1%2B9",
+    "release_name": "jdk-16.0.1+9",
+    "release_type": "ga",
+    "timestamp": "2021-04-23T09:10:06Z",
+    "updated_at": "2021-04-23T09:10:06Z",
+    "vendor": "adoptopenjdk",
+    "version_data": {
+      "build": 9,
+      "major": 16,
+      "minor": 0,
+      "openjdk_version": "16.0.1+9",
+      "security": 1,
+      "semver": "16.0.1+9"
+    }
+  }
+]

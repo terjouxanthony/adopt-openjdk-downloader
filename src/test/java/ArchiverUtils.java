@@ -41,7 +41,7 @@ public class ArchiverUtils {
                         return FileVisitResult.CONTINUE;
                     }
                     // get filename
-                    Path targetFile = source.relativize(file);
+                    Path targetFile = source.getParent().relativize(file);
                     try {
                         TarArchiveEntry tarEntry = new TarArchiveEntry(file.toFile(), targetFile.toString());
                         tOut.putArchiveEntry(tarEntry);
