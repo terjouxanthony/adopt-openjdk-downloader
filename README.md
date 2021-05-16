@@ -8,6 +8,18 @@ It can be useful in a gradle build or a maven plugin, in order to automate the p
 
 
 
+##### Dependency:
+
+```
+<dependency>
+  <groupId>io.github.terjouxanthony</groupId>
+  <artifactId>adopt.openjdk.downloader</artifactId>
+  <version>0.0.1</version>
+</dependency>
+```
+
+
+
 ##### Usage:
 
 ```java
